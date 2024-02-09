@@ -33,3 +33,5 @@ jobs:
             git push
             python kook.py
           fi
+        env:
+          KOOK_BOT_TOKEN: ${{ secrets.KOOK_BOT_TOKEN }}
