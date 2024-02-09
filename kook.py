@@ -15,11 +15,11 @@ headers = {
 exe_raw, jar_raw = open_json("./exe_raw.json"), open_json("./jar_raw.json")
 
 exe_file = MultipartEncoder(
-    fields={'file': (exe_raw['jar'][112:], requests.get(exe_raw['jar']))}
+    fields={'file': (exe_raw['jar'][112:], requests.get(exe_raw['jar']).content)}
 )
 
 jar_file = MultipartEncoder(
-    fields={'file': (jar_raw['jar'][112:], requests.get(jar_raw['jar']))}
+    fields={'file': (jar_raw['jar'][112:], requests.get(jar_raw['jar']).content)}
 )
 
 # 上传文件
