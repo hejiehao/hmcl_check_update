@@ -130,6 +130,7 @@ jar SHA-1：{jar_raw['jarsha1']}"""
         ]
     }
 ])
+print(card)
 
 # 发送消息
 send = requests.post(f"{base_url}/api/v3/message/create", data=json.dumps({
