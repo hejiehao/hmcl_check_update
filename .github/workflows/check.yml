@@ -30,9 +30,10 @@ jobs:
           if git diff-index --quiet HEAD; then
             echo "No Changes"
           else
+            python kook.py
+            git add -A
             git commit -m "[BOT] Update version json."
             git push
-            python kook.py
           fi
         env:
           KOOK_BOT_TOKEN: ${{ secrets.KOOK_BOT_TOKEN }}
