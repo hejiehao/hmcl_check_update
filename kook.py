@@ -28,7 +28,7 @@ exe_upload = requests.post(f"{base_url}/api/v3/asset/create", data=exe_file, hea
     "Content-type": exe_file.content_type
 })
 print(exe_upload.text)
-exe_kook = exe_raw
+exe_kook = exe_raw.copy()
 exe_kook['jar'] = exe_upload.json()['data']['url']
 write_json("./exe_kook.json", exe_kook)
 
@@ -37,7 +37,7 @@ jar_upload = requests.post(f"{base_url}/api/v3/asset/create", data=jar_file, hea
     "Content-type": jar_file.content_type
 })
 print(jar_upload.text)
-jar_kook = jar_raw
+jar_kook = jar_raw.copy()
 jar_kook['jar'] = jar_upload.json()['data']['url']
 write_json("./jar_kook.json", jar_kook)
 
