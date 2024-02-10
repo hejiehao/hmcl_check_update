@@ -3,7 +3,7 @@ name: Check Update & Push To KOOK & Discord
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 * * * *'
+    - cron: '1 * * * *'
 
 permissions: write-all
 
