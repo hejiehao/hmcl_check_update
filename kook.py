@@ -81,7 +81,7 @@ exe SHA-1：{exe_raw['jarsha1']}"""
             },
             {
                 "type": "file",
-                "title": exe_raw['jar'][112:],
+                "title": exe_raw['jar'][118:],
                 "src": exe_kook['jar'],
                 "size": 0
             },
@@ -105,7 +105,7 @@ jar SHA-1：{jar_raw['jarsha1']}"""
             },
             {
                 "type": "file",
-                "title": jar_raw['jar'][112:],
+                "title": jar_raw['jar'][118:],
                 "src": jar_kook['jar'],
                 "size": 0
             },
