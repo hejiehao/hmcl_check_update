@@ -1,13 +1,13 @@
 import requests
 
 with open("./exe_raw.json", mode="w+b") as exe_raw:
-    exe = requests.get("https://github.com/burningtnt/HMCL-Snapshot-Update/raw/v4/artifacts/v4/b8e16c58e93651e8bad5cd7322143f4386f59aa6/f9a373cbf92e9726381a470cab99843b35709f04.exe.json")
+    exe = requests.get("https://github.com/burningtnt/HMCL-Snapshot-Update/raw/v5/artifacts/v5/uploaders/local-storage.gh-repo/HMCL-dev/HMCL/main/gradle.yml.exe.json")
     print(exe)
     print(exe.text)
     exe_raw.write(exe.content)
 
 with open("./jar_raw.json", mode="w+b") as jar_raw:
-    jar = requests.get("https://github.com/burningtnt/HMCL-Snapshot-Update/raw/v4/artifacts/v4/b8e16c58e93651e8bad5cd7322143f4386f59aa6/f9a373cbf92e9726381a470cab99843b35709f04.jar.json")
+    jar = requests.get("https://github.com/burningtnt/HMCL-Snapshot-Update/raw/v5/artifacts/v5/uploaders/local-storage.gh-repo/HMCL-dev/HMCL/main/gradle.yml.jar.json")
     print(jar)
     print(jar.text)
     jar_raw.write(jar.content)
