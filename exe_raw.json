@@ -1,6 +1,6 @@
 {
-  "jar": "https://github.com/burningtnt/HMCL-SNAPSHOT-UPDATE/raw/v5/artifacts/v5/files/deb8f6f9909d651ee51c84d8e2f99b0596364e0c/HMCL-3.5.dev-67e96fb.exe",
-  "jarsha1": "deb8f6f9909d651ee51c84d8e2f99b0596364e0c",
-  "version": "3.5.dev-67e96fb",
+  "jar": "https://github.com/burningtnt/HMCL-SNAPSHOT-UPDATE/raw/v5/artifacts/v5/files/c24cd650c12048111ac7c0524397f7d837024ac7/HMCL-3.5.dev-c806a5d.exe",
+  "jarsha1": "c24cd650c12048111ac7c0524397f7d837024ac7",
+  "version": "3.5.dev-c806a5d",
   "universal": "https://hmcl.huangyuhui.net"
 }
